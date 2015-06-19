@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 Ingo Wiederoder. All rights reserved.
 //
 
+#define PLIST_NAME @"Colors.plist"
+#define OBJECT_KEY @"Colors"
+
 #import <UIKit/UIKit.h>
+#import "DocumentManager.h"
 
 @interface ViewController : UIViewController
 
