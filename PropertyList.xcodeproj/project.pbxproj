@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D71EB7D21B34262B00BA3DDC /* DocumentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D71EB7D11B34262B00BA3DDC /* DocumentManager.m */; };
+		D71EB7D41B3426D600BA3DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71EB7D31B3426D600BA3DDC /* Main.storyboard */; };
+		D71EB7D61B3427BB00BA3DDC /* Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = D71EB7D51B3427BB00BA3DDC /* Colors.plist */; };
 		D7DD80EA1B3422280074A5A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DD80E91B3422280074A5A4 /* main.m */; };
 		D7DD80ED1B3422280074A5A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DD80EC1B3422280074A5A4 /* AppDelegate.m */; };
 		D7DD80F01B3422280074A5A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DD80EF1B3422280074A5A4 /* ViewController.m */; };
-		D7DD80F31B3422280074A5A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DD80F11B3422280074A5A4 /* Main.storyboard */; };
 		D7DD80F51B3422280074A5A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DD80F41B3422280074A5A4 /* Images.xcassets */; };
 		D7DD80F81B3422280074A5A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7DD80F61B3422280074A5A4 /* LaunchScreen.xib */; };
 		D7DD81041B3422280074A5A4 /* PropertyListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DD81031B3422280074A5A4 /* PropertyListTests.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D71EB7D01B34262B00BA3DDC /* DocumentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentManager.h; sourceTree = "<group>"; };
+		D71EB7D11B34262B00BA3DDC /* DocumentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentManager.m; sourceTree = "<group>"; };
+		D71EB7D31B3426D600BA3DDC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D71EB7D51B3427BB00BA3DDC /* Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Colors.plist; sourceTree = "<group>"; };
 		D7DD80E41B3422280074A5A4 /* PropertyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropertyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DD80E81B3422280074A5A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7DD80E91B3422280074A5A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,7 +40,6 @@
 		D7DD80EC1B3422280074A5A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D7DD80EE1B3422280074A5A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D7DD80EF1B3422280074A5A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D7DD80F21B3422280074A5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7DD80F41B3422280074A5A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D7DD80F71B3422280074A5A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D7DD80FD1B3422280074A5A4 /* PropertyListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropertyListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,10 +90,13 @@
 				D7DD80EC1B3422280074A5A4 /* AppDelegate.m */,
 				D7DD80EE1B3422280074A5A4 /* ViewController.h */,
 				D7DD80EF1B3422280074A5A4 /* ViewController.m */,
-				D7DD80F11B3422280074A5A4 /* Main.storyboard */,
+				D71EB7D01B34262B00BA3DDC /* DocumentManager.h */,
+				D71EB7D11B34262B00BA3DDC /* DocumentManager.m */,
+				D71EB7D31B3426D600BA3DDC /* Main.storyboard */,
 				D7DD80F41B3422280074A5A4 /* Images.xcassets */,
 				D7DD80F61B3422280074A5A4 /* LaunchScreen.xib */,
 				D7DD80E71B3422280074A5A4 /* Supporting Files */,
+				D71EB7D51B3427BB00BA3DDC /* Colors.plist */,
 			);
 			path = PropertyList;
 			sourceTree = "<group>";
@@ -199,7 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7DD80F31B3422280074A5A4 /* Main.storyboard in Resources */,
+				D71EB7D61B3427BB00BA3DDC /* Colors.plist in Resources */,
+				D71EB7D41B3426D600BA3DDC /* Main.storyboard in Resources */,
 				D7DD80F81B3422280074A5A4 /* LaunchScreen.xib in Resources */,
 				D7DD80F51B3422280074A5A4 /* Images.xcassets in Resources */,
 			);
@@ -221,6 +230,7 @@
 			files = (
 				D7DD80F01B3422280074A5A4 /* ViewController.m in Sources */,
 				D7DD80ED1B3422280074A5A4 /* AppDelegate.m in Sources */,
+				D71EB7D21B34262B00BA3DDC /* DocumentManager.m in Sources */,
 				D7DD80EA1B3422280074A5A4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +254,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D7DD80F11B3422280074A5A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7DD80F21B3422280074A5A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D7DD80F61B3422280074A5A4 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -416,6 +418,7 @@
 				D7DD81091B3422280074A5A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7DD810A1B3422280074A5A4 /* Build configuration list for PBXNativeTarget "PropertyListTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +427,7 @@
 				D7DD810C1B3422280074A5A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
