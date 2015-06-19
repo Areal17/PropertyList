@@ -28,22 +28,7 @@
     return self;
 }
 
-- (BOOL)copyPlistIfNeeded:(NSString *)plistName {
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *plistURL = [self getPlistURL:plistName];
-    if ([fileManager fileExistsAtPath:[plistURL relativePath]]) {
-        return YES;
-    }
-    NSArray *fileComponents = [plistName componentsSeparatedByString:@"."];
-    NSURL *bundlePlistURL = [[NSBundle mainBundle] URLForResource:fileComponents[0] withExtension:fileComponents[1]];
-    if (!bundlePlistURL) {
-        return NO;
-    }
-    NSError *copyError;
-    BOOL success = [fileManager copyItemAtURL:bundlePlistURL toURL:plistURL error:&copyError];
-    if (!success) { NSLog(@"CopyError: %@",copyError); }
-    return success;
-}
+
 
 - (BOOL)updatePlist:(NSString *)plistName {
     //implementeted for later use
@@ -70,6 +55,23 @@
 }
 
 #pragma mark - "Private" Methods
+
+- (BOOL)copyPlistIfNeeded:(NSString *)plistName {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSURL *plistURL = [self getPlistURL:plistName];
+    if ([fileManager fileExistsAtPath:[plistURL relativePath]]) {
+        return YES;
+    }
+    NSArray *fileComponents = [plistName componentsSeparatedByString:@"."];
+    NSURL *bundlePlistURL = [[NSBundle mainBundle] URLForResource:fileComponents[0] withExtension:fileComponents[1]];
+    if (!bundlePlistURL) {
+        return NO;
+    }
+    NSError *copyError;
+    BOOL success = [fileManager copyItemAtURL:bundlePlistURL toURL:plistURL error:&copyError];
+    if (!success) { NSLog(@"CopyError: %@",copyError); }
+    return success;
+}
 
 - (NSURL *)getPlistURL:(NSString *)plistName {
     NSFileManager *fileManager = [NSFileManager defaultManager];
