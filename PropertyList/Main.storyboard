@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHW-W4-Ph5">
+                                <rect key="frame" x="0.0" y="440" width="600" height="160"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qdD-b4-v1V">
+                                        <rect key="frame" x="199" y="8" width="203" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="199" id="qRd-1p-nSf"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="changeColorValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="fed-TO-erP"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Mv-K6-q1q">
+                                        <rect key="frame" x="199" y="65" width="203" height="31"/>
+                                        <connections>
+                                            <action selector="changeColorValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="fOD-0M-NXB"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rV4-MS-O6I">
+                                        <rect key="frame" x="199" y="122" width="203" height="31"/>
+                                        <connections>
+                                            <action selector="changeColorValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="YTi-Fj-oU6"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.35999999999999999" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5Mv-K6-q1q" firstAttribute="top" secondItem="qdD-b4-v1V" secondAttribute="bottom" constant="27" id="2ge-cA-u1a"/>
+                                    <constraint firstItem="qdD-b4-v1V" firstAttribute="trailing" secondItem="5Mv-K6-q1q" secondAttribute="trailing" id="2oN-iN-3Zx"/>
+                                    <constraint firstItem="qdD-b4-v1V" firstAttribute="trailing" secondItem="rV4-MS-O6I" secondAttribute="trailing" id="FMI-VS-1Ae"/>
+                                    <constraint firstItem="qdD-b4-v1V" firstAttribute="top" secondItem="tHW-W4-Ph5" secondAttribute="topMargin" id="HDP-eC-LHe"/>
+                                    <constraint firstItem="qdD-b4-v1V" firstAttribute="centerX" secondItem="tHW-W4-Ph5" secondAttribute="centerX" id="LIr-aG-xJ1"/>
+                                    <constraint firstAttribute="height" constant="160" id="N5d-mB-M3U"/>
+                                    <constraint firstItem="rV4-MS-O6I" firstAttribute="bottom" secondItem="tHW-W4-Ph5" secondAttribute="bottomMargin" id="Tls-vw-GyD"/>
+                                    <constraint firstItem="qdD-b4-v1V" firstAttribute="leading" secondItem="rV4-MS-O6I" secondAttribute="leading" id="rHR-HW-OVj"/>
+                                    <constraint firstItem="qdD-b4-v1V" firstAttribute="leading" secondItem="5Mv-K6-q1q" secondAttribute="leading" id="w7o-vg-QLx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tHW-W4-Ph5" secondAttribute="bottom" id="239-Kx-2IH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tHW-W4-Ph5" secondAttribute="trailing" constant="-16" id="edP-B1-bQj"/>
+                            <constraint firstItem="tHW-W4-Ph5" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="hUt-CX-aFo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="colorSlider" destination="qdD-b4-v1V" id="2HA-ZM-mqH"/>
+                        <outletCollection property="colorSlider" destination="5Mv-K6-q1q" id="1ey-LG-ZFl"/>
+                        <outletCollection property="colorSlider" destination="rV4-MS-O6I" id="RbK-it-yJq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
