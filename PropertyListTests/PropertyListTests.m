@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "DocumentManager.h"
 
 @interface PropertyListTests : XCTestCase
+
+@property (nonatomic, strong) DocumentManager *dm;
 
 @end
 
@@ -17,6 +20,7 @@
 
 - (void)setUp {
     [super setUp];
+    _dm = [[DocumentManager alloc] initWithPlistName:@"Colors.plist"];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -33,8 +37,13 @@
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+         [self.dm getValuesFromPlist:@"Colors.plist"];
     }];
+}
+
+- (void)testPlistAccess {
+    NSMutableDictionary *values = [self.dm getValuesFromPlist:@"Colors.plist"];
+    XCTAssertNotNil(values);
 }
 
 @end

@@ -10,6 +10,7 @@
 		D71EB7D21B34262B00BA3DDC /* DocumentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D71EB7D11B34262B00BA3DDC /* DocumentManager.m */; };
 		D71EB7D41B3426D600BA3DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D71EB7D31B3426D600BA3DDC /* Main.storyboard */; };
 		D71EB7D61B3427BB00BA3DDC /* Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = D71EB7D51B3427BB00BA3DDC /* Colors.plist */; };
+		D71EB7D71B3429B900BA3DDC /* DocumentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D71EB7D11B34262B00BA3DDC /* DocumentManager.m */; };
 		D7DD80EA1B3422280074A5A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DD80E91B3422280074A5A4 /* main.m */; };
 		D7DD80ED1B3422280074A5A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DD80EC1B3422280074A5A4 /* AppDelegate.m */; };
 		D7DD80F01B3422280074A5A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DD80EF1B3422280074A5A4 /* ViewController.m */; };
@@ -239,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71EB7D71B3429B900BA3DDC /* DocumentManager.m in Sources */,
 				D7DD81041B3422280074A5A4 /* PropertyListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
