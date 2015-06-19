@@ -1,0 +1,2 @@
+# PropertyList App
+The app demonstrate how to use plist’s to store data persistently. The app as three UISlider. A slider change the red, green or blue value of a UIColor. This color will set as backgroundColor of the viewcontrollers view. When the app enter the background the color values will write in the plist. On the other side - when the app starts - the app read the values from the plist and set the slider values and the background color.
