@@ -76,7 +76,7 @@
 - (NSURL *)getPlistURL:(NSString *)plistName {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error;
-    NSURL *directoryURL = [fileManager URLForDirectory:NSPreferencePanesDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:&error];
+    NSURL *directoryURL = [fileManager URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:&error];
     if (error) NSLog(@"GetError: %@",error);
     NSURL *plistURL = [directoryURL URLByAppendingPathComponent:plistName];
     return plistURL;
