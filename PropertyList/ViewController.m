@@ -38,7 +38,7 @@
     if (_plistValues) {
         return _plistValues;
     }
-    _plistValues = [self.docManager getValuesFromPlist:PLIST_NAME];
+    _plistValues = [self.docManager getValuesFromPlist];
     return _plistValues;
 }
 

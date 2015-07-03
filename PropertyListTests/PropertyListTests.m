@@ -37,12 +37,12 @@
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
-         [self.dm getValuesFromPlist:@"Colors.plist"];
+         [self.dm getValuesFromPlist];
     }];
 }
 
 - (void)testPlistAccess {
-    NSMutableDictionary *values = [self.dm getValuesFromPlist:@"Colors.plist"];
+    NSMutableDictionary *values = [self.dm getValuesFromPlist];
     XCTAssertNotNil(values);
 }
 

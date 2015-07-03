@@ -16,8 +16,8 @@
 // interface:
 
 - (instancetype) initWithPlistName:(NSString *)plistName;
-- (BOOL)updatePlist:(NSString *)plistName;
+- (BOOL)updatePlist;
 - (BOOL)saveValues:(NSDictionary *)values error:(NSError * __autoreleasing *) error;
-- (NSMutableDictionary *)getValuesFromPlist:(NSString *)plistName;
+- (NSMutableDictionary *)getValuesFromPlist;
 
 @end
